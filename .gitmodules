@@ -1,0 +1,3 @@
+[submodule "thirdparty/SteamSDK"]
+	path = thirdparty/SteamSDK
+	url = https://github.com/MetaHookSv/SteamSDK

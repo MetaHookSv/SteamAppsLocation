@@ -1,5 +1,8 @@
 # Steamworks SDK provenance
 
+The SDK is maintained in [MetaHookSv/SteamSDK](https://github.com/MetaHookSv/SteamSDK)
+and referenced by this repository as the `thirdparty/SteamSDK` submodule.
+
 The SDK headers, `steam_api.lib` and x86 `steam_api.dll` were copied without source changes from Steamworks SDK:
 
 - Headers and import library: `include/SteamSDK`.

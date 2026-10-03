@@ -58,8 +58,22 @@ A successful lookup returns 0 even when an earlier registry or API stage failed.
 ## Build and test
 
 Requirements: Windows, Visual Studio 2022 with the C++ desktop workload and Windows
-SDK, and CMake 3.21 or newer. The existing x86 Steam SDK headers, import library and
-runtime are included; no dependency download or MetaHook checkout is required.
+SDK, and CMake 3.21 or newer. The x86 Steam SDK headers, import library and runtime
+are provided by the [SteamSDK](https://github.com/MetaHookSv/SteamSDK) submodule at
+`thirdparty/SteamSDK`; no MetaHook checkout is required.
+
+Clone with submodules:
+
+```bat
+git clone --recurse-submodules https://github.com/MetaHookSv/SteamAppsLocation.git
+cd SteamAppsLocation
+```
+
+For an existing checkout, initialize or update the SDK before building:
+
+```bat
+git submodule update --init --recursive
+```
 
 ```bat
 scripts\build-SteamAppsLocation-x86-Release.bat
