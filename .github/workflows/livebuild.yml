@@ -1,0 +1,30 @@
+name: LiveBuild
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  build-win32:
+    runs-on: windows-2022
+    timeout-minutes: 15
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - name: Build and package Windows x86 Release
+        id: build
+        uses: ./.github/actions/build-windows-x86
+      - name: Upload build artifact
+        uses: actions/upload-artifact@v7
+        with:
+          path: ${{ steps.build.outputs.archive-path }}
+          if-no-files-found: error
+          archive: false
