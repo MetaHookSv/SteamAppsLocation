@@ -62,4 +62,4 @@ endif()
 
 install(TARGETS SteamAppsLocation RUNTIME DESTINATION .)
 install(FILES "$<TARGET_PDB_FILE:SteamAppsLocation>"
-    thirdparty/SteamSDK/bin/steam_api.dll README.md LICENSE STEAM-SDK-NOTICE.md DESTINATION .)
+    thirdparty/SteamSDK/bin/steam_api.dll DESTINATION .)
