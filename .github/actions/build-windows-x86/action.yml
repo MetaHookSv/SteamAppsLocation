@@ -24,7 +24,7 @@ runs:
         if (Test-Path -LiteralPath $archivePath -PathType Leaf) {
           Remove-Item -LiteralPath $archivePath
         }
-        & 7z a -t7z $archivePath 'SteamAppsLocation.exe' 'SteamAppsLocation.pdb' 'steam_api.dll' 'README.md' 'LICENSE' 'STEAM-SDK-NOTICE.md'
+        & 7z a -t7z $archivePath 'SteamAppsLocation.exe' 'SteamAppsLocation.pdb' 'steam_api.dll'
         if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
         & 7z t $archivePath
         if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }

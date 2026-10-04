@@ -81,8 +81,9 @@ scripts\build-SteamAppsLocation-x86-Debug.bat
 ```
 
 These scripts configure, build, run CTest, and install to
-`install\x86\<Configuration>`. The install directory contains the EXE, PDB, Steam API
-DLL, README, license and SDK notice. The build uses the static MSVC runtime.
+`install\x86\<Configuration>`. The install directory contains only the EXE, PDB and Steam
+API DLL; the README, license and SDK notice stay in the repository. The build uses the
+static MSVC runtime.
 
 Equivalent commands for Release:
 
