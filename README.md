@@ -1,7 +1,7 @@
 # SteamAppsLocation
 
 A Windows x86 command-line tool that locates an installed Steam game by AppId.
-Originally part of [MetaHookSv](https://github.com/hzqst/MetaHookSv/tree/main/toolsrc/SteamAppsLocation).
+Originally part of [MetaHookSv](https://github.com/MetaHookSv/MetaHookSv/tree/main/toolsrc/SteamAppsLocation).
 
 ## Usage
 
